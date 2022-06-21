@@ -1,0 +1,15 @@
+seed: 42
+lr: .00001
+bert: bert-base-multilingual-cased
+hidden: 400
+p_drop: .3
+dataset: ../data/it_isdt-ud
+device: cuda
+grad_clip: 1.
+num_warmup_steps: 200
+batch_size: 10
+epochs: 50
+project: it
+entity: unn
+unn_iter: 1
+finetune_bert: True

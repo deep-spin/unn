@@ -1,0 +1,15 @@
+seed: 42
+lr: .00005
+bert: bert-base-multilingual-cased
+hidden: 400
+p_drop: .3
+dataset: ../data/sv_talbanken-ud
+device: cuda
+grad_clip: 1.
+num_warmup_steps: 20
+batch_size: 20
+epochs: 50
+project: sv
+entity: unn
+unn_iter: 1
+finetune_bert: True
